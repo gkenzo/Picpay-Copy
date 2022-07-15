@@ -13,7 +13,7 @@ export const SectionText = ({ prop }) => {
 
     return (
         <div className='sectionText'>
-            {isHero ? <h2>{title}</h2> : <span className="sectionTitle">{title}</span> }
+            {isHero ? <h2>{title}</h2> : <span className="sectionTitle">{title}</span>}
             <p>{text}</p>
             <CallToActionButton prop={{ ctaText, ctaHref }} />
         </div>

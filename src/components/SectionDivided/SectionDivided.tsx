@@ -1,11 +1,11 @@
 import React from 'react'
-import './DisplaySection.scss'
+import './SectionDivided.scss'
 //@ts-ignore
 import { SectionText } from '../SectionText/SectionText.tsx';
 //@ts-ignore
 import { SectionImage } from '../SectionImage/SectionImage.tsx';
 
-export const DisplaySection = ({ prop }) => {    
+export const SectionDivided = ({ prop }) => {
 
     let { title,
         text,
@@ -15,7 +15,7 @@ export const DisplaySection = ({ prop }) => {
         ctaText, } = prop
 
     return (
-        <section className='displaySection'>
+        <section className='sectionDivided'>
             <SectionText prop={{ title, text, isHero, ctaText, ctaHref }} />
             <SectionImage prop={{ imgSrc }} />
         </section>
