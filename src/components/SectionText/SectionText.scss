@@ -1,0 +1,28 @@
+.sectionText{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 50%;
+    font-family: BRSonoma, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    padding-left: 2em ;
+
+    h2{
+        font-size: 54px;
+        font-weight: inherit;
+        line-height: 60px;
+
+    }
+
+    .sectionTitle{
+        color: #12c56e;
+        font-weight: inherit;
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 2em;
+    }
+}

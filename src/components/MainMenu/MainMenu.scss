@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #11c76f;
+    color: rgb(247, 247, 247);
+    height: 44px;
+    padding: 2.5rem 0;
+    font-size: 0.9em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        li {
+            list-style: none;
+            padding: 2rem;
+            font-weight: 500;
+            cursor: pointer;
+            letter-spacing: 0.025em;
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+            
+            &:hover{
+                color: rgb(209, 208, 208);
+            }
+        }
+    }
+}

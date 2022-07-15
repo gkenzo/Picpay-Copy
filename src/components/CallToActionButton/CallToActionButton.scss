@@ -1,0 +1,30 @@
+a{
+    border: none;    
+    outline: none;
+    cursor: pointer;
+    padding: 12px 24px;
+    background-color: #426dff;
+    font-weight: 600;
+    color: white;
+    line-height: 23px;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    width: fit-content;    
+
+    &:hover{
+        background-color: #3b63e6;
+    }
+}
+.sectionText a{
+    border-radius: 0.75rem;
+}
+
+nav a{
+    border-radius: 1.5rem;
+
+}
