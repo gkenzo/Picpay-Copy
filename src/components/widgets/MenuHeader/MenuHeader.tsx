@@ -1,17 +1,17 @@
 import * as React from 'react';
-import './MainMenu.scss';
+import './MenuHeader.scss';
 // @ts-ignore
-import { CallToActionButton } from '../CallToActionButton/CallToActionButton.tsx';
+import { CallToActionButton } from '../../elements/CallToActionButton/CallToActionButton.tsx';
 // @ts-ignore
-import { Logo } from '../Logo/Logo.tsx';
+import { Logo } from '../../elements/Logo/Logo.tsx';
 
-const MainMenu = () =>   {
+export const MenuHeader = () => {
     let ctaAttr = {
         ctaText: 'Baixar o App',
         ctaHref: '#'
     }
 
-    return ( 
+    return (
         <nav>
             <ul>
                 {/* <li>{Logo}</li> */}
@@ -19,11 +19,9 @@ const MainMenu = () =>   {
                 <li>Para seu negócio</li>
                 <li>Central de ajuda</li>
                 <li>Sobre o PicPay</li>
-                <li>Blog</li>                
-                <li><CallToActionButton prop={{...ctaAttr}}/></li>
+                <li>Blog</li>
+                <li><CallToActionButton prop={{ ...ctaAttr }} /></li>
             </ul>
         </nav>
-     );
+    );
 }
-
-export default MainMenu;

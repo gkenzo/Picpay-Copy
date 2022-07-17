@@ -1,9 +1,9 @@
 import React from 'react'
-import './SectionText.scss'
+import './SectionDisplayHero.scss'
 //@ts-ignore
-import { CallToActionButton } from '../CallToActionButton/CallToActionButton.tsx';
+import { CallToActionButton } from '../../elements/CallToActionButton/CallToActionButton.tsx';
 
-export const SectionText = ({ prop }) => {
+export const SectionDisplayHero = ({ prop }) => {
 
     let { title,
         text,
@@ -12,7 +12,7 @@ export const SectionText = ({ prop }) => {
         ctaHref } = prop
 
     return (
-        <div className='sectionText'>
+        <div className='sectionDisplayHero'>
             {isHero ? <h2>{title}</h2> : <span className="sectionTitle">{title}</span>}
             <p>{text}</p>
             <CallToActionButton prop={{ ctaText, ctaHref }} />

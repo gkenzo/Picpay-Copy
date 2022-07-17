@@ -1,9 +1,9 @@
 import React from 'react'
 // @ts-ignore
-import { SectionDivided  } from '../SectionDivided/SectionDivided.tsx'
+import { SectionTwoGridContainer  } from '../../widgets/SectionTwoGridContainer/SectionTwoGridContainer.tsx'
 import './HomePage.scss'
 // @ts-ignore
-import { Images } from '../../assets/images/Images.tsx'
+import { Images } from '../../../assets/images/Images.tsx'
 
 export const HomePage = () => {
     interface SectionI {
@@ -71,10 +71,10 @@ export const HomePage = () => {
     return (
         <div className='homePage'>
             {homeSections.map((section, index) => {
-                return index < 3 ? <SectionDivided prop={{ ...section }} /> : ''
+                return index < 3 ? <SectionTwoGridContainer prop={{ ...section }} /> : ''
             })}
             {homeSections.map((section, index) => {
-                return index >= 3 ? <SectionDivided prop={{ ...section }} /> : ''
+                return index >= 3 ? <SectionTwoGridContainer prop={{ ...section }} /> : ''
             })}
         </div>
     )
